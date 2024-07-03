@@ -1,0 +1,103 @@
+﻿@page
+@model Index1Model
+@{
+    ViewData["Title"] = "Examotron page";
+}
+<link rel="stylesheet" href="~/css/examotron.css" asp-append-version="true" />
+
+<div class="topdiv" >
+    <div class="linkdiv">
+        <a href="https://examotron.azurewebsites.net/" target="_blank" class="link">
+            <h2 style="margin: 0; display: inline;">Examotron</h2>
+        </a>
+        <p class="para" >(Click to open. Please note, loading times may vary as the site utilizes free-tier resources on Azure.)</p>
+    </div>
+
+    <div class="ExamotronIntro">
+        <p>
+            Examotron is a comprehensive online resource designed to provide students with easy access to 
+            a wide collection of past exam papers across various subjects. This platform is an invaluable 
+            tool for exam preparation and review, helping students enhance their academic performance by 
+            offering a wealth of material to study from.
+        </p>
+    </div>
+
+    <div class="implementation">
+        <h2>Implementation</h2>
+   
+        <div class="methods">
+            <ul>
+                <li>
+                    <strong>Storage Solution with Azure Blob Storage:</strong>
+                    <ul>
+                        <li>Integrated Azure Blob Storage to manage and store exam-related documents and media files.</li>
+                        <li>Provided a secure and scalable storage solution for efficient data management.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Secure Access Mechanism:</strong>
+                    <ul>
+                        <li>Developed a robust mechanism using <strong>SAS tokens </strong>and stored access policies for quick and secure access to exam materials.</li>
+                        <li>Managed tokens and policies within a database for rapid retrieval and efficient administration.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Database Design with Azure MySQL:</strong>
+                    <ul>
+                        <li>Utilized Azure MySQL to design and implement a relational database.</li>
+                        <li>Ensured efficient data storage and retrieval to support application functionality.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Application Deployment on Azure Web App:</strong>
+                    <ul>
+                        <li>Deployed the Examotron application on Azure Web App.</li>
+                        <li>Ensured high availability, automatic scaling, and seamless updates.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Secure Data Handling:</strong>
+                    <ul>
+                        <li>Implemented encryption and decryption methods packaged as a .NET DLL.</li>
+                        <li>Ensured secure data handling with credentials managed through environment variables.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Exploring Diverse Deployment Strategies:</strong>
+                    <ul>
+                        <li>Currently working on hosting the application on an IIS server using a Hyper-V virtual machine.</li>
+                        <li>Aiming to diversify deployment strategies and reduce hosting costs associated with Azure.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Technologies Used:</strong>
+                    <ul>
+                        <li>ASP.NET Core, C#, HTML, CSS</li>
+                        <li>Azure MySQL, Azure Blob Storage</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h2>Diagram</h2>
+    <div class="diagram-container">
+        <img class="diagram"src="~/images/diagram.png"  />
+    </div>
+    <p>
+        Clients access the Examotron web application hosted on Azure Web App Service,
+        utilizing APIs to interact with the SQL Server and its database. This database
+        serves as a repository containing crucial information related to Azure Blob Storage,
+        which houses essential PDF files. A PowerShell script acts as a vital intermediary,
+        generating SAS (Shared Access Signature) tokens alongside stored access policies.
+        These tokens, along with policy details, are dynamically inserted into the SQL database.
+        This integrated approach ensures secure and efficient access to exam-related materials
+        stored in Azure Blob Storage, enhancing accessibility and management of resources through
+        controlled and scalable access mechanisms.
+    </p>
+</div>
+
+@* <div style="display:grid;">
+
+    @* <img src="~/images/.png" style="position:relative;width:400px;height:500px;margin-left: 200px;" />
+    <img src="~/images/.png" style="position:relative;width:400px;height:500px;margin-left: 200px;" />
+    <img src="~/images/.png" style="position:relative;width:400px;height:500px;margin-left: 200px;" /> *@

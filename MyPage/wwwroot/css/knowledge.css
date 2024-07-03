@@ -1,0 +1,47 @@
+﻿body {
+    font-family: serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+main {
+    padding: 2rem;
+}
+
+.knowledge {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .knowledge article {
+        background: white;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .knowledge h2 {
+        color: #004080;
+        margin-top: 0;
+    }
+
+    .knowledge p {
+        margin: 0.5rem 0;
+        line-height: 1.5;
+        font-size:20px;
+    }

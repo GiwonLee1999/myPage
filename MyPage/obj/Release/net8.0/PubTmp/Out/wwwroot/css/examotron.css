@@ -1,0 +1,42 @@
+.topdiv {
+    margin-top: 5vh;
+}
+
+.linkdiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.link {
+    text-decoration: none; /* Remove underline */
+}
+
+.link-text {
+    font-size: 1.5em; /* Adjust font size to mimic <h2> */
+    font-weight: bold;
+    color: inherit; /* Inherit color from parent */
+    display: inline-block; /* Ensure only text is clickable */
+}
+.para {
+    color: black;
+    margin: 10px;
+}
+
+    .link-text:hover {
+        color: #007bff; /* Change color on hover */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+.ExamotronIntro p{
+    font-size: 22px;
+    width: 700px;
+    color:black;
+    font-family: serif;
+}
+.implementation{
+    color:black;
+    font-family:serif;
+}
+.methods {
+    font-size: 20px;
+  
+}

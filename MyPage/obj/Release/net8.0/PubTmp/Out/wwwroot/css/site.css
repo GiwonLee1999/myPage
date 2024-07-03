@@ -1,0 +1,152 @@
+html {
+  font-size: 14px;
+  overflow:auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+    
+    margin: 0; display: flex; flex-direction: column; min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    background-color: lightslategray;
+    border-radius: 10px;
+    width: auto; /* Adjust the width if necessary */
+    margin-bottom: 20px; /* Adds 20px space below the navbar */
+}
+    nav div {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+
+        nav div:hover {
+            transform: scale(1.1);
+            background-color: #444;
+        }
+div{
+    color: darkslategray;
+    font-family: serif; 
+}
+
+
+.containerInfo {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav .nav-link{
+    color:white;
+    font-size:23px;
+}
+
+.technical-skills {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.skill {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: slategray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+}
+
+    .skill:hover {
+        background-color: #e9e9e9;
+    }
+
+    .skill h3 {
+        margin: 0;
+        font-size: 16px;
+        color: white;
+    }
+
+
+.side-button {
+    position: fixed;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    writing-mode: vertical-rl; 
+    text-align: center;
+    line-height: 12px; 
+    transition: background-color 0.3s;
+    border-radius: 10px 10px 10px 10px; 
+    font-size:19px;
+}
+    .side-button:hover {
+        background-color: darkgray;
+    }
+
+/* Styling the top bar */
+.top-bar {
+    position: fixed; /* Fixes the bar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center;
+    padding: 10px 20px; /* Padding for top bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for effect */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Styling the welcome message */
+.welcome-message {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#footerLayout {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: lightgray;
+    bottom: 0;
+}
+.diagram-container {
+    display: flex;
+    justify-content: center;
+}
+.diagram {
+    width: auto; /* Ensures the image retains its original width */
+    height: auto; /* Ensures the image retains its original height */
+    max-width: 100%; /* Limits the width to not exceed the container width */
+    max-height: 100%; /* Limits the height to not exceed the container height */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensures the image is displayed as a block element */
+}

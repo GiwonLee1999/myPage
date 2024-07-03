@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPage</title>
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyPage.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="top-bar">
+        <span class="welcome-message">Hello, Recruiter! Thank you for visiting.</span>
+        <span class="homePage"><a style="color:white;font-size:20px;" asp-page="/Index" >Home</a></span>
+        <span class="name">I’m Giwon, a passionate IT developer.</span>
+    </div>
+
+    <button id="scrollToBottomButton" class="side-button">Contacts</button>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="footerLayout">
+        <div class="containerInfo">
+            Email: <a href="mailto:giwon.lee@outlook.com">Giwon.Lee@outlook.com</a>
+            | Phone: 1+ 514) 699-3836
+            | Habitat: Delson, QC
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

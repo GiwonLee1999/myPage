@@ -1,0 +1,72 @@
+﻿@page
+@model MyPage.Pages.ExperienceModel
+@{
+    ViewData["Title"] = "Experience page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience | Giwon</title>
+    <link rel="stylesheet" href="~/css/exp.css" asp-append-version="true" />
+
+</head>
+<body>
+ 
+    <main>
+        <section class="experience">
+            <h2>MHI RJ Aviation</h2>
+            <p>Boisbriand, QC</p>
+            <p><strong>IT Development Intern</strong> | May 2023 – Current</p>
+            <ul>
+                <li>
+                    <strong>CI/CD | Azure DevOps, IIS, AzMySQL, Powershell</strong>
+                    <ul>
+                        <li>Automated application deployment on IIS to minimize manual tasks and ensure uniformity across deployments.</li>
+                        <li>Implemented robust backup and rollback strategies for databases to address issues and maintain data integrity.</li>
+                        <li>Developed and automated backup procedures for Azure indexes using PowerShell scripts integrated with pipelines for efficient data management.</li>
+                        <li>Streamlined deployment processes by integrating them to target and deploy applications seamlessly on virtual machines hosting IIS.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Password-Less Database Access | Asp.Net Core, .Net Framework, Azure MDI, Azure Key Vaults</strong>
+                    <ul>
+                        <li>Implemented Azure Managed Identity for seamless and secure authentication, eliminating the need for explicit credentials.</li>
+                        <li>Leveraged token-based access for application authentication, mitigating the risk of credential exposure.</li>
+                        <li>Utilized Azure Key Vaults to ensure the security of sensitive information within the application.</li>
+                        <li>Developed a package streamlining the implementation of password-less connections, significantly reducing the team’s workload.</li>
+                        <li>Developed Comprehensive Documentation and Best Practices for Passwordless Authentication DLL Package.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Data Loading | Python, Visual Studio Code, Azure MySQL, PowerShell</strong>
+                    <ul>
+                        <li>Implemented Extract, Transform, Load (ETL) methods to reformat CSV files for optimal database import.</li>
+                        <li>Addressed issues related to irregular line feeds within CSV files, ensuring consistent and structured data.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Zendesk Validation App | Javascript, Node.js, HTML, CSS</strong>
+                    <ul>
+                        <li>Implemented a Zendesk App to conduct real-time validation of user inputs.</li>
+                        <li>Utilized JavaScript API to develop functionality enabling the creation of internal notes within the Zendesk platform.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Key Learnings</h3>
+            <p>Throughout my tenure at MHI RJ Aviation, I actively participated in Scrum development, attending daily stand-ups and retrospectives. This agile environment honed my ability to work collaboratively, communicate effectively, and adapt quickly to evolving project requirements.</p>
+            <p>One of my significant learnings was the deep dive into Azure features and .NET applications. I gained hands-on experience in backend and cloud systems, which included:</p>
+            <ul>
+                <li><strong>Azure Features:</strong> Gained expertise in using various Azure services such as Azure DevOps, Azure Managed Identity, Azure Key Vaults, and Azure MySQL for secure and efficient application deployment and management.</li>
+                <li><strong>.NET Applications:</strong> Developed and managed applications using ASP.NET Core and .NET Framework, enhancing my proficiency in building scalable and maintainable software solutions.</li>
+                <li><strong>Cloud Systems:</strong> Understood the intricacies of cloud-based architectures, including the deployment, monitoring, and scaling of applications on cloud platforms.</li>
+                <li><strong>Data Management:</strong> Mastered data manipulation and transformation techniques using PowerShell, Python, and various Azure services to ensure data integrity and accessibility.</li>
+                <li><strong>Automation:</strong> Leveraged CI/CD pipelines and automation scripts to streamline workflows, reduce manual intervention, and maintain consistent deployment practices.</li>
+                <li><strong>Security Best Practices:</strong> Implemented password-less authentication and secure data management practices to safeguard sensitive information and comply with industry standards.</li>
+            </ul>
+            <p>This experience not only solidified my technical skills but also enriched my understanding of best practices in software development and cloud technologies, preparing me for future challenges in the IT industry.</p>
+        </section>
+    </main>
+</body>
+</html>
